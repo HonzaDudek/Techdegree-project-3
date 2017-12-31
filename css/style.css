@@ -1,0 +1,210 @@
+/*==========================
+===== Universal styles =====
+==========================*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/*==========================
+====== Mobile version ======
+==========================*/
+
+/*======== Header ========*/
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: dimgray;
+    color: white;
+}
+
+.name {
+    align-self: center;
+    text-align: center;
+}
+
+
+/*======== Body ========*/
+
+body {
+    min-width: 320px;
+    font-size: 1em;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.intro h2,
+.intro p {
+    margin: auto;
+    align-self: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.intro p {
+    color: gray;
+}
+
+
+fieldset {
+    padding: 10px 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding-top: 20px;
+}
+
+.primary_content {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-part,
+.second-part {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 10px 5px 0 5px;
+}
+
+.first-part {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.first-part label {
+    margin-top: 10px;
+    color: gray;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="textarea"],
+input[type="number"],
+textarea,
+select {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    align-self: center;
+    border-radius: 5px;
+    border-style: inset;
+}
+
+.second-part input:checked {
+    background-color: #489ff9;
+    color: white;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+}
+
+.question {
+    margin-top: 15px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    background-color: #4ebbb5;
+    color: white;
+    align-self: center;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+input[placeholder] {
+    text-align: right;
+}
+
+input:focus {
+    border: 2px solid #30599b;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+input:focus::w
+
+/*======== Footer ========*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+footer p {
+    align-self: center;
+}
+
+
+/*==========================
+====== Media queries ======
+==========================*/
+ @media (min-width:755px) {
+     body {
+         max-width: 1000px;
+         margin: auto;
+         align-content: center;
+         align-items: center;
+         justify-content: space-between;
+     }
+
+     .field {
+         flex-direction: row;
+     }
+
+     .field label {
+         width: 15%;
+         align-content: center;
+         margin: 0;
+         padding: 10px 0;
+     }
+ }
